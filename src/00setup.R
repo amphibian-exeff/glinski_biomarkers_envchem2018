@@ -68,3 +68,4 @@ dim(bb_data.tdt)
 
 bb_data.bif <- bb_data[bif,]
 dim(bb_data.bif)
+
