@@ -27,7 +27,7 @@ print((.packages()))
 #Determine path directory based on the user machine######
 #tom epa windows
 if(Sys.info()[4]=="DZ2626UTPURUCKE"){
-  dag_root<-path.expand("k:/git/glinski_biomarkers/")
+  dag_root<-path.expand("d:/git/glinski_biomarkers/")
 }
 print(paste("Root directory location: ", dag_root, sep=""))
 

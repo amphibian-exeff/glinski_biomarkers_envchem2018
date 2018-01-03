@@ -54,3 +54,4 @@ step.tdt4 <- stepAIC(lm.tdt4, direction="both", trace=TRUE)
 summary(step.tdt4)
 step.tdt4
 step.tdt4$anova
+
