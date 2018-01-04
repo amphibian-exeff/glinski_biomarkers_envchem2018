@@ -32,6 +32,7 @@ if(Sys.info()[4]=="DZ2626UTPURUCKE"){
 print(paste("Root directory location: ", dag_root, sep=""))
 
 dag_csv_in <- paste(dag_root, "csv_in/", sep="")
+dag_graphics <- paste(dag_root, "graphics/", sep="")
 
 #check to see if directories are accessible
 boo = file.exists(paste(dag_csv_in,"biomarker.csv",sep=""))
