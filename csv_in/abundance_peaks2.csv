@@ -1,0 +1,15 @@
+Chemical,Treatment,Rate
+Bif,max_app,1392
+Met,max_app,674
+Tdn,max_app,802
+MetBif,max_app,2262
+TdnBif,max_app,1081
+TdnMet,max_app,1642
+TdnMetBif,max_app,1907
+Bif,tenth_app,2356
+Met,tenth_app,2982
+Tdn,tenth_app,884
+MetBif,tenth_app,1656
+TdnBif,tenth_app,2304
+TdnMet,tenth_app,2538
+TdnMetBif,tenth_app,1941
