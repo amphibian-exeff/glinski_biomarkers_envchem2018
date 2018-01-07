@@ -29,6 +29,9 @@ print((.packages()))
 if(Sys.info()[4]=="DZ2626UTPURUCKE"){
   dag_root<-path.expand("d:/git/glinski_biomarkers/")
 }
+if(Sys.info()[4]=="Coiles-MBP"){
+  dag_root<-path.expand("~/git/glinski_biomarkers/")
+}
 print(paste("Root directory location: ", dag_root, sep=""))
 
 dag_csv_in <- paste(dag_root, "csv_in/", sep="")
@@ -41,6 +44,8 @@ print(paste("check to see if R can access files OK: ", boo))
 #cleaned up data set, manually reshaped
 bb_data <- read.csv(paste(dag_csv_in,"exposure_mixtures2.csv",sep=""))
 #View(bb_data)
+abundance_peaks <- read.csv(paste(dag_csv_in,"abundance_peaks.csv",sep=""))
+#View(abundance_peaks)
 
 #factors as appropriate
 summary(bb_data)
