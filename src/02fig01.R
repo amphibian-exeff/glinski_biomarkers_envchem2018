@@ -33,3 +33,4 @@ conc_barplot <- paste(dag_graphics,"glinski_biomarkers_fig1.jpg",sep="")
   jpeg(conc_barplot, width = 6, height = 7, units = "in",res=600)
   g
 dev.off()
+
