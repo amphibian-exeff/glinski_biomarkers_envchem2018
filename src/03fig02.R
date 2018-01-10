@@ -12,7 +12,7 @@ levels(abundance_peaks$Chemical)
 g <- ggplot(abundance_peaks, aes(Chemical, Rate, fill=Treatment)) + 
   geom_bar(stat="identity", colour="black", position="dodge") +
   theme_bw() +
-  labs(x = "Treatment", y=expression(paste("Concentration (",mu,"g/kg)",sep=""))) +
+  labs(x = "Treatment", y="Peak Abundance") +
   guides(fill=guide_legend(title="Rate"))
 g
 
