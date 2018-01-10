@@ -17,6 +17,6 @@ g <- ggplot(abundance_peaks, aes(Chemical, Rate, fill=Treatment)) +
 g
 
 conc_barplot <- paste(dag_graphics,"glinski_biomarkers_fig2.jpg",sep="")
-jpeg(conc_barplot, width = 6, height = 7, units = "in",res=600)
-g
+  jpeg(conc_barplot, width = 6, height = 7, units = "in",res=600)
+  g
 dev.off()
