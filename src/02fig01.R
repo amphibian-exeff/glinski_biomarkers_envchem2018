@@ -25,7 +25,7 @@ g <- ggplot(conc_summary, aes(group, mean_conc, fill=pesticide)) +
   facet_wrap(~ rate, scale="free_y", ncol=1) +
   geom_errorbar(aes(ymin=mean_conc, ymax=mean_conc+sd_conc), width=.2, position=position_dodge(.9)) + 
   theme_bw() +
-  labs(x = "Treatment", y=expression(paste("Concentration (",mu,"g/kg)",sep=""))) +
+  labs(x = "Treatment", y=expression(paste("Concentration (",mu,"g/g)",sep=""))) +
   guides(fill=guide_legend(title="Chemical"))
 g
 
