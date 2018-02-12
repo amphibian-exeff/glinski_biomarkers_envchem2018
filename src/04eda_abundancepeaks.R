@@ -4,6 +4,14 @@ amplitudes <- read.csv(paste(dag_csv_in,"MB_10_End_result_amplitudes.csv",sep=""
 dim(amplitudes)
 colnames(amplitudes)
 
+d <- density(log10(amplitudes$sum))
+plot(d)
+polygon(d, col="red", border="blue")
+
+#drop < 5000 sum
+drop_lt_5000 <- which(amplitudes$sum < 5000)
+dim(amplitudes[-drop_lt_5000,])
+
 control_vars <- c("Con_10_p_1", "Con_11_p_1", "Con_12_p_1", "Con_2_p_1", "Con_3_p_2",
                   "Con_4_p_2", "Con_5_p_2", "Con_6_p_2", "Con_7_p_1", "Con_8_p_1", "Con_9_p_1")
 control_data <- amplitudes[control_vars]
@@ -44,3 +52,6 @@ tmb_vars <- c("Tmb_10_1_p_1", "Tmb_10_2_p_1", "Tmb_10_2_p_2", "Tmb_10_3_p_1", "T
 tmb_data <- amplitudes[tmb_vars]
 dim(tmb_data)
 
+library(sm)
+
+sm.density.compare(mpg, cyl, xlab="Miles Per Gallon")
