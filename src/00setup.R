@@ -8,6 +8,7 @@ library(knitr, quietly = TRUE, warn.conflicts = FALSE)
 library(ggplot2)
 library(reshape2)
 library(MASS)
+library(fdrtool)
 print("list of loaded packages: ")
 print((.packages()))
 
