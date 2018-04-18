@@ -1,5 +1,5 @@
 #might need to reimport due to level issues
-bb_data <- read.csv(paste(dag_csv_in,"exposure_mixtures2.csv",sep=""))
+bb_data <- read.csv(paste(dag_csv_in,"exposure_mixtures3.csv",sep=""))
 
 # View(bb_data)
 

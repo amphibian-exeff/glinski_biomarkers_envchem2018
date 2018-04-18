@@ -43,7 +43,7 @@ boo = file.exists(paste(dag_csv_in,"biomarker.csv",sep=""))
 print(paste("check to see if R can access files OK: ", boo))
 
 #cleaned up data set, manually reshaped
-bb_data <- read.csv(paste(dag_csv_in,"exposure_mixtures2.csv",sep=""))
+bb_data <- read.csv(paste(dag_csv_in,"exposure_mixtures3.csv",sep=""))
 #View(bb_data)
 abundance_peaks <- read.csv(paste(dag_csv_in,"abundance_peaks2.csv",sep=""))
 #View(abundance_peaks)
