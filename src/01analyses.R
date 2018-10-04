@@ -1,4 +1,5 @@
 #bifenthrin
+#View(bb_data.bif)
 summary(bb_data.bif)
 lm.bif <- lm(conc ~ met + tdt, data=bb_data.bif)
 summary(lm.bif)
