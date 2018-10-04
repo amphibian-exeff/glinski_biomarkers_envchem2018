@@ -13,7 +13,11 @@ g <- ggplot(abundance_peaks, aes(Chemical, Rate, fill=Treatment)) +
   geom_bar(stat="identity", colour="black", position="dodge") +
   theme_bw() +
   labs(x = "Treatment", y="Peak Abundance") +
-  guides(fill=guide_legend(title="Rate"))
+  scale_fill_discrete(name = "Rate",
+                      breaks = c("max_app", "tenth_app"),
+                      labels=c("Maximum","1/10th Max")) +
+  theme(legend.position="top")
+  #guides(fill=guide_legend(title="Rate"))
 g
 
 conc_barplot <- paste(dag_graphics,"glinski_biomarkers_fig2.jpg",sep="")
